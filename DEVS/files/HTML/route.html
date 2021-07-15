@@ -1,0 +1,70 @@
+<base href="<?= $GLOBALS_INI["BASE_HREF"] ?>">
+
+<!DOCTYPE HTML>
+<html lang="fr">
+
+	<head>
+		<title>Liste des films animés du studio Ghibli</title>
+		<meta charset="utf-8">
+		<meta name="description" content="TP FORMULAIRE">
+		<!-- For Internet Explhorreur : to force css3 -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<!-- Tablettes 'n' Mobiles -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- datatables & bootstrap style -->
+	    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/dataTables.bootstrap5.min.css">
+		
+		<!-- main css -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		
+		<!-- datatables javascript -->
+		<script type="text/javascript" src="js/jquery-3.5.1.js"></script>
+		<script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+		<script type="text/javascript" src="js/dataTables.bootstrap5.min.js"></script>
+
+		<!-- bootstrap javascript -->
+		<script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+
+		<!-- main script -->
+		<script src="js/crud_ghibli.js"></script>
+	</head>
+
+    <!--BODY -->
+    <body>
+
+        <!--HEADER -->
+        <header>
+            <?php include $GLOBALS_INI["PATH_HOME"] . $GLOBALS_INI["PATH_FILES"]  . 'header.html'; ?>
+        </header>
+        <!--END HEADER -->
+
+        <!--NAV -->
+        <nav>
+            <?php include $GLOBALS_INI["PATH_HOME"] . $GLOBALS_INI["PATH_FILES"]  . 'nav.html'; ?>
+        </nav>
+        <!--END NAV -->
+
+        <!--ASIDE -->
+        <aside>
+            <?php include $GLOBALS_INI["PATH_HOME"] . $GLOBALS_INI["PATH_FILES"]  . 'aside.html'; ?>
+        </aside>
+        <!--END ASIDE -->
+
+        <!--SECTION -->
+        <section>
+            <?php include $GLOBALS_INI["PATH_HOME"] . $GLOBALS_INI["PATH_FILES"]  . $monPHP . ".html" ?>
+        </section>
+        <!--END SECTION -->
+
+        <!--FOOTER -->
+        <footer>
+            <?php include $GLOBALS_INI["PATH_HOME"] . $GLOBALS_INI["PATH_FILES"]  . "footer.html" ?>
+        </footer>
+        <!--END FOOTER -->
+
+    </body>
+    <!--END BODY -->
+
+</html>
